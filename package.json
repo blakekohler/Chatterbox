@@ -1,0 +1,25 @@
+{
+  "name": "ChatterBox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakekohler/Chatterbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakekohler/Chatterbox/issues"
+  },
+  "homepage": "https://github.com/blakekohler/Chatterbox#readme",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.3"
+  }
+}
