@@ -15,6 +15,15 @@ document.querySelector('button').addEventListener('click', () => {
   recognition.start();
 });
 
+recognition.onspeechstart = function() {
+ document.getElementById("microphone").style.color = "#7d7d7d";
+}
+
+recognition.onspeechend = function() {
+ document.getElementById("microphone").style.color = "#fff";
+}
+
+
 recognition.addEventListener('result', (e) => {
   let last = e.results.length - 1;
   let text = e.results[last][0].transcript;
