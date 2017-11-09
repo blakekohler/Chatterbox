@@ -34,6 +34,16 @@ outputYou.textContent = text;
   console.log('Confidence: ' + e.results[0][0].confidence);
 
   // We will use the Socket.IO here later…
+
+  var open = text.substring(0, 5);
+  var target = text.substring(5);
+  if(open === 'open '){
+    var url = 'http://www.' + target;
+    window.open(url, '', 'width=1000');
+  }
+ 
+
+
   socket.emit('chat message', text);
 });
 
